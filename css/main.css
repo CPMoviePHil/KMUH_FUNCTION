@@ -1,0 +1,1245 @@
+
+/*=============================================================
+    Authour URI: www.binarycart.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*==============================================
+    GENERAL  STYLES    
+    =============================================*/
+body {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: '微軟正黑體','Open Sans', 'sans-serif';
+    overflow: hidden;
+    width: 100%;
+    float: right;
+    font-weight: bold;
+    font-size: 17px;
+}
+h3 {
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: 800;
+}
+h4 {
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: 600;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+ #wrapper {
+    width: 100%;
+    margin-top:50px;
+}
+
+#page-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 100px;
+    z-index: -1;
+    background: #fff;
+
+}
+
+#page-inner {
+    position: absolute;
+    width: 100%;
+    /* margin: 60px 0px 20px 0px; */
+    background-color: #fff!important;
+    height: auto;
+    /* min-height: 100%; */
+    top: 80px;
+    bottom: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;       
+    overflow-x: hidden;
+}
+.pad-top {
+    padding-top:15px;
+}
+a:link{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;
+    color: #333;
+}
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+table{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*==============================================
+    Search    
+    =============================================*/
+
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}    
+
+/*==============================================
+    MENU STYLES    
+    =============================================*/
+.btn-success {
+  color: #fff;
+  background-color: #6da799!important;
+  border-color: #fff!important;
+}
+
+.top-header{
+    text-align: center;
+    color:#fff;
+    font-size:72px;
+    font-weight:800;
+    margin: 10px 25px 10px 10px;    
+}
+
+
+.sidebar-collapse .nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    bottom:0;
+    z-index:3;
+    overflow:scroll;
+    background:#fff;    
+    padding:0;
+    padding-top:80px;
+}
+
+
+#container {
+    position:absolute;
+    width:100%;
+    top:0;
+    bottom:0;
+    z-index:-1;
+    overflow:scroll;
+    background:red;
+}
+.sidebar-collapse > .nav > li > a {
+    padding:15px 10px;
+    color: #333;
+font-weight: 900;
+font-size: 16px;
+}
+.sidebar-collapse > .nav > li {
+    border-bottom:1px solid #e1e1e1;
+}
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+    
+    background:#F3F3F3;
+    outline:0;
+}
+
+.navbar-side {
+    border:none;
+    background-color: #fff;
+}
+.navbar-inverse {
+/*background-color: #214761;*/
+background-color: #6da799;
+border-color: #F0F0F0;
+min-height: 80px;
+}
+
+
+.nav > li > a > i {
+    margin-right:10px;
+}
+.logout-spn {
+    float:right;
+    color:#fff;
+    font-size:25px;
+    font-weight:800;
+    margin: 15px 25px 10px 50px;
+}
+    .logout-spn a {
+        text-decoration:none;
+    }
+.active-link {
+    background-color:#f3f3f3;
+}
+
+.menu-header{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px;
+}
+.menu-header li{
+    padding-right: 30px;
+}
+.menu-header li h3{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;
+}
+.menu-header li:nth-child(2) h3{
+    padding-top: 3px;
+}
+.menu-header li:nth-child(3){
+    padding-top: 20px;
+}
+
+.menu-header small{
+    font-size: 20px;
+    font-weight: 800;
+    color:  #fff;
+}    
+/*==============================================
+    DASHBOARD STYLES    
+    =============================================*/
+.div-square {
+    padding:5px;
+    border:3px double #e1e1e1;
+    -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+    border-radius:8px;
+    margin:5px;
+
+}
+
+.div-square> a,.div-square> a:hover {
+    color:#808080;
+     text-decoration:none;
+}
+/*==============================================
+    FOOTER STYLES     
+    =============================================*/
+.footer {
+    /*background-color:#214761;*/
+    background-color:#6da799;
+    width:100%;
+    color:#fff;
+    height:100px;
+    padding:20px 0px 20px 0px;
+    padding-left:20px;
+    z-index:100;
+    position:absolute;
+    bottom:0px;    
+}
+
+.footer > a, .footer>a:hover {
+    color:#fff;
+}
+
+ 
+/*==============================================
+    pt-index  
+    =============================================*/
+.kmuh-bulletion{
+    margin-top: 5px;
+}
+
+.pt-index-map .img-rounded{
+    /*padding-bottom: 20px;*/
+    height: 440px;
+    width: 100%!important;
+    position: relative;
+}
+.pt-index-map-info{
+    cursor:default;
+    width: 55%;
+    height: auto;
+}
+.Fire-content{
+    margin-top: -15px;
+}
+
+.Fire-content span{
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.pt-index-Fireimg{
+    width: 8%;
+    height: 50px;
+}
+
+
+
+/*==============================================
+    pt-info   
+    =============================================*/
+.modal-content{
+    margin-top:50%;
+}
+.modal-dialog{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;   
+}
+
+.infoimg-header{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #d3e28f;
+}
+
+.infoimg-header h3{
+    font-weight: 800;
+}
+
+.infoimg-center img{
+    width: 15%;
+}
+
+.infoimg-center p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.alert-success h4{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.pt-showbox-header{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #d3e28f;
+}
+
+.pt-showbox1{
+    margin-left: 10%;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.pt-showbox2{
+    margin-left: 10%;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.pt-showbox3{
+    margin-left: 15%;
+    font-weight:bold;
+    font-size: 20px;
+}
+.pt-showbox4{
+    margin-left: 10%;
+    font-weight:bold;
+    font-size: 20px;
+}
+.pt-showbox5{
+    font-weight:bold;
+    font-size: 20px;
+}
+.pt-showbox5 a{
+    font-size: 20px;
+   color: #6da799; 
+}
+.pt-showbox6{
+   width: 100%;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #6da799;
+}
+
+
+.pt-box{
+    text-decoration:none;
+    color: #333;
+}
+
+.pt-box .panel{
+    height:310px;
+}
+
+.pt-box:hover{
+    color: #333;
+    text-decoration:none;
+    cursor:pointer;
+}
+.pt-box-sex{
+    float: left;
+    margin-top: 5px;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.pt-box-id{
+    font-weight:bold;
+    font-size: 16px;
+}
+
+.pt-box-dnr{
+    color: red;
+    float: right;
+    margin-top: 5px;
+    font-weight:bold;
+    font-size: 16px;
+}
+.pt-box-content{
+    font-family: 'Microsoft JhengHei','微軟正黑體','Open Sans', 'sans-serif';
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.pt-box-content-img1{
+    /*width: 100%;*/
+}
+
+.pt-box-content-img2{
+    margin-top: 15px;
+    width: 38px;
+}
+
+/*==============================================
+    Login     
+    =============================================*/
+
+.logo{
+    width: 150px;
+    margin-top: -15px;
+}
+
+.panel-login {
+    margin-top: 100px;
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    color: #00415d;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.panel-login>.panel-heading a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+    color: #029f5b;
+    font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.btn-login {
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #53A3CD;
+}
+.forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.btn-register {
+    background-color: #1CB94E;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #1CA347;
+    border-color: #1CA347;
+}
+
+/*==============================================
+    kumh-wisdom-cloud     
+    =============================================*/
+
+.wisdom-img{
+    margin-top: 0px;
+    width: 50%;
+    height: 350px   
+}
+
+.loader {
+    margin:50px auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid pink;
+    border-bottom: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*==============================================
+    operaInfo - BIS     
+    =============================================*/
+.operaInfo-navbar{
+    min-height: auto;
+}
+.operaInfo-navbar .operaInfo-top{
+    background-color: #6da799;
+    width: 100%;
+} 
+.operaInfo thead{
+    font-size:32px;
+}
+.operaInfo  tbody{
+    font-size:30px;
+}
+#operaInfo-wrapper{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 60px;
+    z-index: -1;
+    background: #fff;
+}
+.operaInfo-top .top-header{
+    text-align: center;
+    color:#fff;
+    font-size:48px;
+    font-weight:600;
+    margin: 10px 25px 10px 10px;    
+    background-color: #6da799;
+}
+.operaInfo-content{
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    padding-bottom: 15px;
+    overflow: auto;  
+    -webkit-overflow-scrolling: touch;       
+}
+.form-operaInfo p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-operaInfo span{
+    color: #0066CC;
+    font-size: 30px;
+    font-weight: 600;
+}
+.operaInfo-content .table-responsive{
+    border: 0px;
+}
+.operaInfo-content table thead{
+    background-color: #6da799;
+    color:#fff;
+    font-size:36px;
+}
+.operaInfo-content table tbody{
+    font-size:36px;
+}
+.operaInfo-content button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #6DA799;    
+    font-size:36px;
+    font-weight:600;
+}
+.operaInfo-content label{
+    font-size:36px;
+    font-weight:600;
+}
+.opera-footer{
+       /*background-color:#214761;*/
+    background-color:#6da799;
+    width:100%;
+    color:#fff;
+    height:auto;
+    padding:20px 0px 20px 0px;
+    padding-left:20px;
+    z-index:100;
+    position:absolute;
+    bottom:0px;    
+}
+
+/*==============================================
+    operaHealthInfo - BIS     
+    =============================================*/
+
+.operaHealthInfo-form{
+    position: fixed;
+    background-color: #fff;
+    margin-left: 10px;
+    top: 80px;
+    width: 100%;
+}
+.operaHealthInfo-form label{
+    font-size:36px;
+    font-weight:600;
+}
+.operaHealthInfo-form select{
+    font-size:36px;
+    height: auto;
+}
+
+.operaHealthInfo-form p{
+    font-size: 40px;
+    font-weight: 600;
+}
+.operaHealthInfo-form span{
+    color: #0066CC;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.operaHealthInfo-content{
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    bottom: 10px;
+    padding-bottom: 15px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.operaHealthInfo-content thead,.operaHealthInfo-content tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: inherit;
+}
+.operaHealthInfo-content tbody {
+    display: block;
+    max-height: 550px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.operaHealthInfo-content .table-title{
+    text-align: center;
+    background-color: #6da799!important;
+    color: #fff;
+}
+.operaHealthInfo-content .table-responsive{
+    border: 0px;
+}
+.operaHealthInfo-content table thead{
+    background-color: #6da799;
+    color:#fff;
+    font-size:36px;
+}
+.operaHealthInfo-content table tbody{
+    font-size:30px;
+}
+
+/*==============================================
+    operaHealthInfo-chart - BIS     
+    =============================================*/
+
+.form-Health-chart label{
+    font-size:34px;
+    font-weight:600;
+}
+.form-Health-chart label[id="labelwarn"]{
+    font-size:34px;
+    font-weight:600;
+}
+.form-Health-chart span{
+    color: #0066CC;
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-Health-chart button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #6DA799;    
+    font-size:34px;
+    font-weight:600;
+    margin-bottom: 0.5%;
+}
+
+#HealthChart{
+    width:100%;
+    height:400px;
+}
+
+/*==============================================
+    operaCalendar - BIS     
+    =============================================*/
+.operaCalendar-content{
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;       
+    /*white-space: nowrap;*/
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.operaCalendar-content .operaCalendar-info{
+    margin-top: 1%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.operaCalendar-content .operaCalendar-info > span{
+    font-size:30px;
+    font-weight:600;
+    display: inline-block;
+}
+
+.operaCalendar-content .operaCalendar-info > div{
+    display: inline-block;
+    border-radius:10px;
+    width:15px;
+    height:15px;
+    box-shadow:0 2px 3px #333;
+}
+
+.operaCalendar-content .operaCalendar-info > .operaCalendar-info-1{
+    background-color: #0000FF; 
+}
+.operaCalendar-content .operaCalendar-info > .operaCalendar-info-2{
+    background-color: #33FF33 ;
+}
+.operaCalendar-content .operaCalendar-info > .operaCalendar-info-3{
+    background-color: #FF2D2D ;
+}
+
+#operacalendar {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.fc-center{
+    float: left;
+}
+
+.operaCalendar-content a:link{
+    color: #fff;
+}
+
+.operaCalendar-content .ToDolistadd{
+    margin-bottom: 5px;
+    color: #6DA799;
+    font-size:30px;
+    font-weight:600;
+}
+
+.operaCalendar-content #search-time button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: #6DA799;
+    font-size:30px;
+    font-weight:600;
+}
+
+.operaCalendar-content #search-time label{
+    font-size:30px;
+    font-weight:600;
+}
+.operaCalendar-content .fc-nonbusiness{
+    background: #EA0000;
+}
+.operaCalendar-content .fc-unthemed td.fc-today{
+    background: #FFC78E;
+}
+
+.operaCalendar-content .fc-event{
+    border-radius:10px;
+    width:15px;
+    height:15px;
+    box-shadow:0 2px 3px #333;
+    display: inline-block;
+}
+
+/*==============================================
+    pt-cost - BIS     
+    =============================================*/
+.pt-cost-content{
+    /*white-space: nowrap;*/
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    padding-bottom: 15px;
+    overflow: auto; 
+    -webkit-overflow-scrolling: touch;       
+    font-size:36px;
+}
+.pt-cost-content img{
+    width: 630px;
+}
+.cost-title{
+    color:  #0066CC;
+}
+.cost-price{
+    color:  #000;
+}
+.cost-note{
+    color:  #EA7500;
+}
+.pttable thead{
+    font-size:32px;
+}
+.pttable tbody{
+    font-size:30px;
+}
+.ptcsot-td-cost-div {
+   float:right;
+}
+/*==============================================
+    pt-tpr - BIS     
+    =============================================*/
+    
+.tpr_header{
+    position: fixed;
+    background-color: #fff;
+    top: 60px;
+    height: 40px;
+    width: 100%;
+}
+.divdate{
+    margin-top:5px;
+}
+
+.tprtable thead{
+    font-size:32px;
+}
+.tprtable  tbody{
+    font-size:30px;
+}
+.tprdiv{
+    position:  inherit;
+}
+
+.tpr_topmenu {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+
+.tpr_topmenu a {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 12px;
+    color: #fff;
+    text-align: center;
+
+    -webkit-box-shadow: 0px 6px 0px #C07AB8;
+    -moz-box-shadow: 0px 6px 0px #C07AB8;
+    -o-box-shadow: 0px 6px 0px #C07AB8;
+    box-shadow: 0px 6px 0px #C07AB8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.tpr_topmenu .active{
+    color:#000;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+    background:rgb(44,160,202);
+    -webkit-box-shadow: inset 0px -1px 0px #C07AB8;
+    -moz-box-shadow: inset 0px -1px 0px #C07AB8;
+    -o-box-shadow: inset 0px -1px 0px #C07AB8;
+    box-shadow: inset 0px -1px 0px #C07AB8;
+    top:7px;
+}
+
+    .tpr_topmenu a.style1 {
+        background-color: #efa8b0;
+        background-image: linear-gradient(bottom, #efa8b0 0%, #efa8b0 100%);
+        background-image: -o-linear-gradient(bottom, #efa8b0 0%, #efa8b0 100%);
+        background-image: -moz-linear-gradient(bottom, #efa8b0 0%, #efa8b0 100%);
+        background-image: -webkit-linear-gradient(bottom, #efa8b0 0%, #efa8b0 100%);
+        background-image: -ms-linear-gradient(bottom, #efa8b0 0%, #efa8b0 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #efa8b0),color-stop(1, #efa8b0));
+
+    }
+
+    .tpr_topmenu a.style2 {
+        background-color: #c79cc8;
+        background-image: linear-gradient(bottom, #c79cc8 0%, #c79cc8 100%);
+        background-image: -o-linear-gradient(bottom, #c79cc8 0%, #c79cc8 100%);
+        background-image: -moz-linear-gradient(bottom, #c79cc8 0%, #c79cc8 100%);
+        background-image: -webkit-linear-gradient(bottom, #c79cc8 0%, #c79cc8 100%);
+        background-image: -ms-linear-gradient(bottom, #c79cc8 0%, #c79cc8 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #c79cc8),color-stop(1, #c79cc8));
+ 
+    }
+
+    .tpr_topmenu a.style3 {
+        background-color: #a89cc8;
+        background-image: linear-gradient(bottom, #a89cc8 0%, #a89cc8 100%);
+        background-image: -o-linear-gradient(bottom, #a89cc8 0%, #a89cc8 100%);
+        background-image: -moz-linear-gradient(bottom, #a89cc8 0%, #a89cc8 100%);
+        background-image: -webkit-linear-gradient(bottom, #a89cc8 0%, #a89cc8 100%);
+        background-image: -ms-linear-gradient(bottom, #a89cc8 0%, #a89cc8 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #a89cc8),color-stop(1, #a89cc8));
+    
+    }
+
+    .tpr_topmenu a.style4 {
+        background-color: #9bb2e1;
+        background-image: linear-gradient(bottom, #9bb2e1 0%, #9bb2e1 100%);
+        background-image: -o-linear-gradient(bottom, #9bb2e1 0%, #9bb2e1 100%);
+        background-image: -moz-linear-gradient(bottom, #9bb2e1 0%, #9bb2e1 100%);
+        background-image: -webkit-linear-gradient(bottom, #9bb2e1 0%, #9bb2e1 100%);
+        background-image: -ms-linear-gradient(bottom, #9bb2e1 0%, #9bb2e1 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #9bb2e1),color-stop(1, #9bb2e1));
+               
+    }
+
+    .tpr_topmenu a.style5 {
+        background-color: #8cc9f0;
+        background-image: linear-gradient(bottom, #8cc9f0 0%, #8cc9f0 100%);
+        background-image: -o-linear-gradient(bottom, #8cc9f0 0%, #8cc9f0 100%);
+        background-image: -moz-linear-gradient(bottom, #8cc9f0 0%, #8cc9f0 100%);
+        background-image: -webkit-linear-gradient(bottom, #8cc9f0 0%, #8cc9f0 100%);
+        background-image: -ms-linear-gradient(bottom, #8cc9f0 0%, #8cc9f0 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #8cc9f0),color-stop(1, #8cc9f0));
+           
+        
+    }
+    .tpr_topmenu a.style6 {
+        background-color: #F0D18E;
+        background-image: linear-gradient(bottom, #8cc9f0 0%, #F0D18E 100%);
+        background-image: -o-linear-gradient(bottom, #F0D18E 0%, #F0D18E 100%);
+        background-image: -moz-linear-gradient(bottom, #F0D18E 0%, #F0D18E 100%);
+        background-image: -webkit-linear-gradient(bottom, #F0D18E 0%, #F0D18E 100%);
+        background-image: -ms-linear-gradient(bottom, #F0D18E 0%, #F0D18E 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #F0D18E),color-stop(1, #F0D18E));
+        
+    }          
+         
+
+    .tpr_topmenu a strong, .tpr_topmenu a b {
+        display: block;
+        font-size: 36px;
+        line-height: 1.1;
+        color: inherit !important;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+    }
+
+    .tpr_topmenu a:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .tpr_topmenu a:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+           
+    .tpr-content{
+        width: 100%;
+        position: absolute;
+        top: 130px;
+        bottom: 10px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .tpr-content thead,.tpr-content tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: inherit;
+    }
+    .tpr-content table thead{
+        background-color: #6da799;
+        color: #fff;
+        font-size: 36px;
+    }
+    .tpr-content tbody {
+        display: block;
+        width: 100%;
+        height: 110px;
+        overflow-y: scroll;
+    }
+    .tpr-chart{
+        font-size:24px;
+    }
+    .tpr-chart label{
+        font-size:34px;
+        font-weight:600;
+    }
+    .tpr-chart button{
+        color: #fff;
+        background-color: #6DA799;
+        font-size:32px;
+        font-weight:600;
+        margin-bottom: 0.5%;
+    }  
+    .tpr-chart button:hover,tpr-chart button:active{
+        color: #fff;
+        background-color: #6DA799;
+    }         
+    
+/*==============================================
+    pt-MedicalPlan - BIS     
+    =============================================*/
+.pt-MedicalPlan-content{
+    overflow:auto;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    padding-bottom: 15px;
+    overflow: auto;  
+    font-size:36px;
+}
+.mp-title{
+    color:  #EA7500;
+    font-size: 40px;
+}
+.pt-MedicalPlan-content select{
+    width: 100%;
+}
+.pt-MedicalPlan-content textarea{
+    font-size: 30px;
+}
+
+/*==============================================
+    MEDIA QUERIES     
+    =============================================*/
+    
+ @media(min-width:992px) {
+    .navbar-side {
+        z-index: 1;
+        position: absolute;
+        width: 260px;
+        display: none;
+    }
+    .col-md-3 {
+    width: 24.6%;
+    }
+
+}
+
+ @media(min-height: 768px) {
+    .pt-index-map .img-rounded{
+    height: 750px;
+    }
+    .pt-index-map-info{
+        cursor:default;
+        width: 85%;
+        height: auto;
+    }
+    .pt-box-content-img2{
+        margin-top: 5px;
+    }
+
+}
+
+
+ @media(max-width:768px) {
+    body {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    h4 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+     #page-wrapper{
+        position:absolute;
+        width:100%;
+        top:0;
+        bottom:0;
+        z-index:-1;
+        overflow:auto;
+        overflow-x: hidden;
+        background:#fff; 
+        margin-top: 60px;
+    }     
+    #page-inner {
+         position: static;
+         top:0px;
+         bottom: 10px;
+         overflow: hidden;
+         min-height:100%;
+    }
+ 
+    .pt-box-content-img1{
+        margin-top: 30px;
+        width: 50%!important;
+    }
+    .pt-box-content-img2{
+        margin-top: 0px;
+        width: 33px!important;
+    }    
+    .pt-showbox1{
+        margin-left: 1%!important;
+    }
+    .pt-showbox2{
+        margin-left: 1%!important;
+    }
+    .pt-showbox3{
+        margin-left: 1%!important;
+    }
+    .pt-showbox4{
+        margin-left: 1%!important;
+    }
+    .pt-box-content{
+        font-weight: 800;
+        font-size: 16px;
+    }
+    .pt-index-map{
+         display: none;
+     }
+    .navbar-toggle{
+        background-color: #6da799!important;
+        border-color: #6da799!important;
+        margin-top: 20px;
+    }    
+    .navbar-toggle:hover{
+        border-color: #ddd!important;
+    }
+    .menu-header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .top-header{
+        font-size:54px;
+    }
+
+    .wisdom-img{
+        margin-top: 0px;
+        width: 100%;
+        height: 250px   
+    }    
+
+    /*---operaHealthInfo---*/
+    .operaInfo-top .top-header{
+        text-align: initial;
+        font-size:26px;
+        display:block;
+        margin: 0px;  
+    }
+    .form-Health-chart label{
+        display: block;
+    }
+    .form-operaInfo label{
+        display: block;
+    }
+    /*---pt-tpr---*/
+    .tpr_header{
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;       
+        top: 120px;
+        height: 80px;
+    }
+    .tpr-content{
+        top: 140px;
+    }
+
+    #operaInfo-wrapper{
+        position:absolute;
+        width:100%;
+        top:0;
+        bottom:0;
+        z-index:-1;
+        overflow:auto;
+        overflow-x: hidden;
+        background:#fff; 
+        margin-top: 60px;
+    }    
+    .opera-footer{
+        display: none;    
+    }
+
+ }
+
